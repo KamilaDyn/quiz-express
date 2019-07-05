@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <title>quiz</title>
+  </head>
+  <body>
+    <div class="quiz">
+      <h1 class="title">Front-end Developer - QUIZ</h1>
+      <h2 class="correct-answers">
+        Poprawne odpowiedzi: <span id="good-answers">0</span>
+      </h2>
+    </div>
+
+    <div id="game-board" class="game-board">
+      <div id="tip"></div>
+      <div class="help">
+        <button id="callToAFriend">Tel. do Przyjaciela</button>
+        <button id="halfOnHalf">Pół na Pół</button>
+        <button id="questionToTheCrowd">Pytanie do Publiczności</button>
+      </div>
+
+      <h2 id="question" class="question"></h2>
+      <div class="answers">
+        <button class="answer-btn" id="answer1" data-answer="0"></button>
+        <button class="answer-btn" id="answer2" data-answer="1"></button>
+        <button class="answer-btn" id="answer3" data-answer="2"></button>
+        <button class="answer-btn" id="answer4" data-answer="3"></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

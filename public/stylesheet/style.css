@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+}
+.title {
+  color: #47cab3;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+.correct-answers {
+  color: red;
+  text-align: center;
+}
+.help {
+  margin: 1.33em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.help button {
+  padding: 5px;
+  margin: 5px;
+  line-height: 1.5em;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.question {
+  padding: 5px;
+  text-align: left;
+}
+.game-board {
+  width: 60%;
+  margin: 0 auto;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin: 20px;
+}
+.answer-btn {
+  padding: 5px;
+  background-color: gray;
+  border: 1px solid white;
+  color: white;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+  .game-board {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  .game-board {
+    width: 70%;
+  }
+  .help {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .game-board {
+    width: 80%;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    width: 100vw;
+  }
+  .game-board {
+    width: 90%;
+  }
+}
