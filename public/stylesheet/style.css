@@ -14,17 +14,17 @@ body {
   flex-direction: column;
   width: 80%;
   margin: 20px auto;
+  text-align: center;
 }
 .title {
   color: #47cab3;
   font-weight: bold;
   text-transform: uppercase;
-  text-align: center;
+
   padding: 20px 0;
 }
 .correct-answers {
   color: red;
-  text-align: center;
 }
 .help {
   margin: 1.33em;

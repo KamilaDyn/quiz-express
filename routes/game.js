@@ -180,7 +180,7 @@ function gameRoutes(app) {
 
     res.json({
       text: doesFriendKnowAnswer
-        ? `Hmm, wydaje mi się , że odpowiedź to${
+        ? `Hmm, wydaje mi się , że odpowiedź to: ${
             question.answers[question.correctAnswer]
           } `
         : `Hmm no nie wiem...`
